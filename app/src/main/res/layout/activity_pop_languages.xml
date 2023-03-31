@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181D31"
+    tools:context=".PopLanguages">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/predTV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="POPULAR LANGUAGES"
+                android:textColor="#ffffff"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/predTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code your way to the top with popular languages."
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/predTV1" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_cLang"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/predTV2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#C7E8CA">
+
+                    <ImageView
+                        android:id="@+id/c_logo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/c_logo" />
+
+                    <ImageView
+                        android:id="@+id/c_course"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/c_logo"
+                        app:srcCompat="@drawable/video_icon" />
+
+                    <ImageView
+                        android:id="@+id/c_notes"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/notes_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/c_course" />
+
+                    <TextView
+                        android:id="@+id/tv_c_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="NanoDegree\nCertification"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/c_course"
+                        app:layout_constraintStart_toEndOf="@+id/c_course"
+                        app:layout_constraintTop_toTopOf="@+id/c_course" />
+
+                    <TextView
+                        android:id="@+id/tv_c_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read Notes"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/c_notes"
+                        app:layout_constraintStart_toStartOf="@+id/tv_c_course"
+                        app:layout_constraintTop_toTopOf="@+id/c_notes" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_cppLang"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@+id/cv_cLang"
+                app:layout_constraintTop_toTopOf="@+id/cv_cLang">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#C7E8CA">
+
+                    <ImageView
+                        android:id="@+id/cpp_logo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cpp_icon" />
+
+                    <ImageView
+                        android:id="@+id/cpp_course"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cpp_logo"
+                        app:srcCompat="@drawable/video_icon" />
+
+                    <ImageView
+                        android:id="@+id/cpp_notes"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/notes_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cpp_course" />
+
+                    <TextView
+                        android:id="@+id/tv_cpp_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="NanoDegree\nCertification"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/cpp_course"
+                        app:layout_constraintStart_toEndOf="@+id/cpp_course"
+                        app:layout_constraintTop_toTopOf="@+id/cpp_course" />
+
+                    <TextView
+                        android:id="@+id/tv_cpp_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read Notes"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/cpp_notes"
+                        app:layout_constraintStart_toStartOf="@+id/tv_cpp_course"
+                        app:layout_constraintTop_toTopOf="@+id/cpp_notes" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_javaLang"
+                Of="@+id/cv_cLang"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="@+id/cv_cLang"
+                app:layout_constraintTop_toBottomOf="@+id/cv_cLang">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#C7E8CA">
+
+                    <ImageView
+                        android:id="@+id/java_logo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/java_icon" />
+
+                    <ImageView
+                        android:id="@+id/java_course"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/java_logo"
+                        app:srcCompat="@drawable/video_icon" />
+
+                    <ImageView
+                        android:id="@+id/java_notes"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/notes_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/java_course" />
+
+                    <TextView
+                        android:id="@+id/tv_java_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="NanoDegree\nCertification"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/java_course"
+                        app:layout_constraintStart_toEndOf="@+id/java_course"
+                        app:layout_constraintTop_toTopOf="@+id/java_course" />
+
+                    <TextView
+                        android:id="@+id/tv_java_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read Notes"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/java_notes"
+                        app:layout_constraintStart_toStartOf="@+id/tv_java_course"
+                        app:layout_constraintTop_toTopOf="@+id/java_notes" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_pyLang"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@+id/cv_javaLang"
+                app:layout_constraintTop_toTopOf="@+id/cv_javaLang">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#C7E8CA">
+
+                    <ImageView
+                        android:id="@+id/py_logo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/python_icon" />
+
+                    <ImageView
+                        android:id="@+id/py_course"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/py_logo"
+                        app:srcCompat="@drawable/video_icon" />
+
+                    <ImageView
+                        android:id="@+id/py_notes"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/notes_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/py_course" />
+
+                    <TextView
+                        android:id="@+id/tv_py_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="NanoDegree\nCertification"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/py_course"
+                        app:layout_constraintStart_toEndOf="@+id/py_course"
+                        app:layout_constraintTop_toTopOf="@+id/py_course" />
+
+                    <TextView
+                        android:id="@+id/tv_py_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Read Notes"
+                        android:textColor="#181D31"
+                        app:layout_constraintBottom_toBottomOf="@+id/py_notes"
+                        app:layout_constraintStart_toStartOf="@+id/tv_py_course"
+                        app:layout_constraintTop_toTopOf="@+id/py_notes" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

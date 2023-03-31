@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "734271166022",
+    "project_id": "incertusproject",
+    "storage_bucket": "incertusproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734271166022:android:b273cffe262e330d519c47",
+        "android_client_info": {
+          "package_name": "com.example.incertusproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734271166022-s3aivjosug69cl00fodjqf83ej0n2su1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwsk0FgjR699-KofChFbT3s1bKMNqjFjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734271166022-s3aivjosug69cl00fodjqf83ej0n2su1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

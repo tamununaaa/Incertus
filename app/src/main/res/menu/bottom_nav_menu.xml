@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/predict"
+        android:title="Prediction"
+        android:icon="@drawable/predict_icon"/>
+
+    <item
+        android:id="@+id/company"
+        android:title="Questions"
+        android:icon="@drawable/company_icon"/>
+
+    <item
+        android:id="@+id/learning"
+        android:title="Learning"
+        android:icon="@drawable/learning_icon"/>
+
+
+
+</menu>
